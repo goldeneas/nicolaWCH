@@ -1,7 +1,7 @@
 import watch
 
 class Screen:
-    def start(self, watch: watch.Watch):
+    def __init__(self, watch: watch.Watch):
         pass
 
     def update(self):
@@ -14,4 +14,7 @@ class Screen:
         pass
 
     def on_sleep(self):
+        pass
+
+    def can_sleep(self):
         pass

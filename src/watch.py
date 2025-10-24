@@ -4,6 +4,7 @@ from mpu import MPU6500
 from sh1107g import SH1107G
 from time_screen import TimeScreen
 from timer_screen import TimerScreen
+from duck_screen import DuckScreen
 from debounced_button import DebouncedButton
 import time
 
@@ -22,7 +23,7 @@ class Watch:
                                                   self.cycle_screen)
 
         self._screen_cycle_idx = 0
-        self._screen_list = [TimeScreen(self), TimerScreen(self)]
+        self._screen_list = [TimeScreen(self), TimerScreen(self), DuckScreen(self)]
 
         self.set_awake(True)
         self.set_screen(0)
