@@ -23,5 +23,5 @@ class Image:
 
         for j, line in enumerate(self._int_list):
             for i in range(0, bit_length):
-                bit = (line >> i) & 1
+                bit = (line >> (bit_length - 1 - i)) & 1
                 display.rect(x + i * scale, y + j * scale, 1 * scale, 1 * scale, bit, True)
