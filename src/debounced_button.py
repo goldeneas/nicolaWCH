@@ -1,6 +1,7 @@
 from machine import Pin
 import time
 
+REQUIRED_ACTIVE_TICKS = 4
 BOUNCING_MAX_DELTA_MS = 200
 
 
@@ -17,6 +18,14 @@ class DebouncedButton():
 
         diff = time.ticks_diff(now, self._last_pressed_timestamp)
         if (diff < BOUNCING_MAX_DELTA_MS):
+            return
+
+        active_ticks = 0
+        while btn.value() and active_ticks < REQUIRED_ACTIVE_TICKS:
+            time.sleep_ms(5)
+            active_ticks += 1
+
+        if (active_ticks < REQUIRED_ACTIVE_TICKS):
             return
 
         self._last_pressed_timestamp = now
