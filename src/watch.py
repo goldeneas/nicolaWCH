@@ -1,11 +1,11 @@
 from clock import Clock
-from machine import I2C, Pin
+from input_system import InputSystem
+from machine import I2C
 from mpu import MPU6500
 from sh1107g import SH1107G
 from time_screen import TimeScreen
 from timer_screen import TimerScreen
 from duck_screen import DuckScreen
-from debounced_button import DebouncedButton
 import time
 
 SCREEN_SLEEP_DELTA_MS = 1000 * 3
@@ -15,12 +15,15 @@ class Watch:
     def __init__(self, mpu_address):
         self._i2c = I2C(1)
         self._clock = Clock()
+        self._input_system = InputSystem()
 
         self._display = SH1107G(self.get_i2c())
         self._mpu = MPU6500(i2c=self.get_i2c(), address=mpu_address)
 
-        self._screen_switch_btn = DebouncedButton("PB15", Pin.PULL_DOWN, Pin.IRQ_RISING,
-                                                  self.cycle_screen)
+        self._input_system.register_input("PB14", "time_switch")
+        self._input_system.register_input("PB15", "screen_switch")
+
+        self._input_system.register_callback("screen_switch", self.cycle_screen)
 
         self._screen_cycle_idx = 0
         self._screen_list = [TimeScreen(self), TimerScreen(self), DuckScreen(self)]
@@ -97,3 +100,6 @@ class Watch:
 
     def get_clock(self):
         return self._clock
+
+    def get_input_system(self):
+        return self._input_system

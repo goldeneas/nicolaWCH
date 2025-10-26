@@ -1,14 +1,14 @@
 import watch
-from machine import ADC, Pin
+from machine import ADC
 from builtins import min
-from debounced_button import DebouncedButton
 
 class TimerScreen:
     def __init__(self, watch: watch.Watch):
         self._watch = watch
         self._timer_knob = ADC("PA0")
-        self._time_btn = DebouncedButton("PB14", Pin.PULL_DOWN, Pin.IRQ_RISING,
-                                         self.cycle_time_units)
+    
+        input_system = watch.get_input_system()
+        input_system.register_callback("time_switch", self.cycle_time_units)
 
         # hrs, mins, secs
         self._timer_units = [0, 0, 0]
