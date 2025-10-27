@@ -1087,7 +1087,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SS14"
+		(symbol "Diode:1N5820"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1106,7 +1106,7 @@
 					)
 				)
 			)
-			(property "Value" "SS14"
+			(property "Value" "1N5820"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1114,7 +1114,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SMA"
+			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -1123,7 +1123,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1132,7 +1132,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "40V 1A Schottky Diode, SMA"
+			(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1150,7 +1150,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SMA*"
+			(property "ki_fp_filters" "D*DO?201AD*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1159,7 +1159,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SS14_0_1"
+			(symbol "1N5820_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -1197,7 +1197,7 @@
 					)
 				)
 			)
-			(symbol "SS14_1_1"
+			(symbol "1N5820_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -4329,6 +4329,12 @@
 		(uuid "14edbbb8-7cfe-48dc-9c23-ad700c9372e3")
 	)
 	(junction
+		(at 161.29 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "185d64ad-c325-4064-9bb0-d59b02805e2a")
+	)
+	(junction
 		(at 238.76 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4411,12 +4417,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d714f45-3c1f-4bad-b4a9-c98ff466b05d")
-	)
-	(junction
-		(at 161.29 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adab6692-d96d-4932-a072-d11160ec1e97")
 	)
 	(junction
 		(at 73.66 167.64)
@@ -6441,7 +6441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
+		(property "Footprint" "LED_THT:LED_D2.0mm_W4.0mm_H2.8mm_FlatTop"
 			(at 256.54 144.78 0)
 			(effects
 				(font
@@ -6587,7 +6587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 71.882 173.99 90)
 			(effects
 				(font
@@ -6764,73 +6764,6 @@
 			(project "smartwatch_soc"
 				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SS14")
-		(at 157.48 35.56 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1afe954f-6640-4585-a67f-c6248c76fdf0")
-		(property "Reference" "D5"
-			(at 156.972 29.718 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS14"
-			(at 156.972 32.258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 157.48 31.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 157.48 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 157.48 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b936ebe-345c-4a8c-a16e-fc463baa7e86")
-		)
-		(pin "1"
-			(uuid "c89706f7-022b-4302-85a9-b4f9d270d902")
-		)
-		(instances
-			(project ""
-				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
-					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -7067,7 +7000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 170.942 46.99 90)
 			(effects
 				(font
@@ -7203,7 +7136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 50.292 173.99 90)
 			(effects
 				(font
@@ -7343,7 +7276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 214.63 66.548 90)
 			(effects
 				(font
@@ -7411,7 +7344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 227.33 113.538 90)
 			(effects
 				(font
@@ -7547,7 +7480,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 29.972 173.99 90)
 			(effects
 				(font
@@ -7616,7 +7549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 176.022 20.32 90)
 			(effects
 				(font
@@ -7684,7 +7617,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 248.92 107.188 90)
 			(effects
 				(font
@@ -7819,7 +7752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 236.982 139.7 90)
 			(effects
 				(font
@@ -8429,7 +8362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 170.942 39.37 90)
 			(effects
 				(font
@@ -8604,6 +8537,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5820")
+		(at 161.29 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "997b0fae-ccc0-4edb-b2da-7dec7f63e85d")
+		(property "Reference" "D5"
+			(at 156.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N5820"
+			(at 153.162 41.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 156.845 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
+			(at 161.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
+			(at 161.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c4d74c8c-bcc3-4adf-87c3-cc602db9e937")
+		)
+		(pin "1"
+			(uuid "653d000f-6920-4dbe-aaad-567ae24b8c80")
+		)
+		(instances
+			(project "smartwatch_soc"
+				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 142.24 35.56 180)
 		(unit 1)
@@ -8698,7 +8700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 248.92 146.558 90)
 			(effects
 				(font
@@ -9289,7 +9291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 227.33 152.908 90)
 			(effects
 				(font
@@ -9359,7 +9361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 92.202 173.99 90)
 			(effects
 				(font
@@ -9643,7 +9645,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
+		(property "Footprint" "LED_THT:LED_D2.0mm_W4.0mm_H2.8mm_FlatTop"
 			(at 256.54 105.41 0)
 			(effects
 				(font
@@ -9894,75 +9896,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SS14")
-		(at 161.29 39.37 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dfab6129-d03e-45ef-bccf-90d9ae1dd615")
-		(property "Reference" "D6"
-			(at 155.956 39.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SS14"
-			(at 155.956 42.418 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 156.845 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 161.29 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 161.29 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81148b2a-22c0-453f-b90f-21391b9ae4f5")
-		)
-		(pin "1"
-			(uuid "8a971b4a-72a2-451e-9c73-10b8c32e409b")
-		)
-		(instances
-			(project "smartwatch_soc"
-				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:CK_KMS2xxG")
 		(at 73.66 160.02 90)
 		(unit 1)
@@ -10060,7 +9993,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 193.04 19.558 90)
 			(effects
 				(font
@@ -10127,7 +10060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
+		(property "Footprint" "LED_THT:LED_D2.0mm_W4.0mm_H2.8mm_FlatTop"
 			(at 222.25 64.77 0)
 			(effects
 				(font
@@ -10206,7 +10139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 236.982 100.33 90)
 			(effects
 				(font
@@ -10243,6 +10176,73 @@
 			(project ""
 				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5820")
+		(at 157.48 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3099348-b917-4349-981d-7163decb9c07")
+		(property "Reference" "D7"
+			(at 156.972 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5820"
+			(at 156.972 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 157.48 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64ab0791-98e9-44fc-86c9-7dd3529d6a36")
+		)
+		(pin "1"
+			(uuid "38b9ca93-618a-4b58-9c9d-16653f023847")
+		)
+		(instances
+			(project ""
+				(path "/35fbcf8c-23e2-4364-8111-b69121d03e91"
+					(reference "D7")
 					(unit 1)
 				)
 			)
