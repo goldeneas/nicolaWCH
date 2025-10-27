@@ -17,6 +17,7 @@ class Image:
 
     def __init__(self, int_list: list[int]):
         self._int_list = int_list
+        self._inverted = False
     
     def place(self, x: int, y: int, scale: int, display: framebuf.Framebuffer):
         bit_length = util.bit_length(self._int_list[0])
@@ -24,4 +25,12 @@ class Image:
         for j, line in enumerate(self._int_list):
             for i in range(0, bit_length):
                 bit = (line >> (bit_length - 1 - i)) & 1
+                bit = not bit if self.is_inverted() else bit
+
                 display.rect(x + i * scale, y + j * scale, 1 * scale, 1 * scale, bit, True)
+    
+    def invert(self):
+        self._inverted = not self._inverted
+
+    def is_inverted(self):
+        return self._inverted

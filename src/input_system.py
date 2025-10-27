@@ -18,6 +18,7 @@ class InputSystem:
 
     def register_callback(self, event_name: str, callback):
         if event_name in self._callback_dict:
+            print("ALREADY PRESENT")
             self._callback_dict[event_name].append(callback)
             return
 
@@ -27,5 +28,6 @@ class InputSystem:
         callbacks = self._callback_dict[event_name]
 
         for callback in callbacks:
+            print("ITER")
             callback(pin)
 

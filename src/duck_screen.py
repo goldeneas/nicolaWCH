@@ -50,6 +50,9 @@ class DuckScreen:
         self._watch = watch
         self._image = Image(IMAGE)
 
+        input_system = watch.get_input_system()
+        input_system.register_callback("image_inversion", lambda pin: self._image.invert())
+
     def update(self):
         pass
 
