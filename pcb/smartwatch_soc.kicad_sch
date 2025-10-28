@@ -4767,6 +4767,12 @@
 		(uuid "14edbbb8-7cfe-48dc-9c23-ad700c9372e3")
 	)
 	(junction
+		(at 59.69 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "192b77e9-5d40-4e89-9ff4-fb3bcbd4891f")
+	)
+	(junction
 		(at 372.11 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4819,12 +4825,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c5e5caf-d420-433e-a262-23c31fe3bda2")
-	)
-	(junction
-		(at 81.28 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "615608f3-2255-4843-b73a-9f073cbdfc14")
 	)
 	(junction
 		(at 157.48 26.67)
@@ -4929,12 +4929,6 @@
 		(uuid "e45cddf3-5f8b-4d71-9f9c-d37ec6405ad4")
 	)
 	(junction
-		(at 59.69 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ec25bc7b-bb32-406c-b429-e48a6528b8ec")
-	)
-	(junction
 		(at 49.53 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4957,16 +4951,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbd24ca6-c615-4e75-8987-956e62e3680a")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 81.28 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03ef271c-dbf0-43b1-9e00-4420a6ad395d")
 	)
 	(wire
 		(pts
@@ -5097,6 +5081,16 @@
 			(type default)
 		)
 		(uuid "21fba00b-5539-4277-9790-185366fcb1f5")
+	)
+	(wire
+		(pts
+			(xy 81.28 33.02) (xy 81.28 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ab8714-1512-4579-8eee-6ee67f85e70e")
 	)
 	(wire
 		(pts
@@ -5340,16 +5334,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 252.73) (xy 45.72 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5183b676-0383-4911-b46f-3d1642e93a01")
-	)
-	(wire
-		(pts
 			(xy 39.37 15.24) (xy 39.37 17.78)
 		)
 		(stroke
@@ -5407,16 +5391,6 @@
 			(type default)
 		)
 		(uuid "63c514aa-0c31-4f3f-9bb2-a21f8b0ce16a")
-	)
-	(wire
-		(pts
-			(xy 38.1 260.35) (xy 45.72 260.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70747e1a-6c0a-41b8-b416-4039398eee27")
 	)
 	(wire
 		(pts
@@ -5510,16 +5484,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 43.18) (xy 81.28 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "819f71d8-669d-4fd3-bbe5-66646c56dc2b")
-	)
-	(wire
-		(pts
 			(xy 312.42 134.62) (xy 313.69 134.62)
 		)
 		(stroke
@@ -5590,16 +5554,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 43.18) (xy 81.28 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f0b711f-c959-4166-83b2-a4c2643432d7")
-	)
-	(wire
-		(pts
 			(xy 72.39 130.81) (xy 74.93 130.81)
 		)
 		(stroke
@@ -5627,16 +5581,6 @@
 			(type default)
 		)
 		(uuid "afaf0c3a-2a5c-4b04-a6e7-766e0764a4f9")
-	)
-	(wire
-		(pts
-			(xy 38.1 255.27) (xy 45.72 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0cbdd94-1bd8-46c6-9726-f4ad39453561")
 	)
 	(wire
 		(pts
@@ -5850,6 +5794,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 33.02) (xy 81.28 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db6d2b74-1207-4711-8713-c60ec39389f7")
+	)
+	(wire
+		(pts
 			(xy 199.39 74.93) (xy 199.39 78.74)
 		)
 		(stroke
@@ -5897,16 +5851,6 @@
 			(type default)
 		)
 		(uuid "e0637038-3e67-4531-9aa0-e118a551d829")
-	)
-	(wire
-		(pts
-			(xy 59.69 33.02) (xy 81.28 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e14dff9c-291f-4bab-87f0-69da005d6d33")
 	)
 	(wire
 		(pts
@@ -6118,8 +6062,30 @@
 		)
 		(uuid "ff9f6cf0-fd70-4c10-8bdc-dff565be3f28")
 	)
+	(global_label "ESP32_3V3"
+		(shape output)
+		(at 81.28 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0370e0f5-6a7c-4ef5-8a6d-69caddf63904")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.7879 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CP2102_RTSb"
-		(shape input)
+		(shape output)
 		(at 346.71 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6141,7 +6107,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO16"
-		(shape input)
+		(shape bidirectional)
 		(at 66.04 95.25 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6152,7 +6118,7 @@
 		)
 		(uuid "13ab770a-8e10-4bc8-bab6-db3fe2345fe6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.1454 95.25 0)
+			(at 48.0341 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6151,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO0"
-		(shape input)
+		(shape output)
 		(at 177.8 57.15 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6207,7 +6173,7 @@
 		)
 	)
 	(global_label "CP2102_TXTb"
-		(shape input)
+		(shape output)
 		(at 346.71 81.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6229,7 +6195,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO17"
-		(shape input)
+		(shape output)
 		(at 66.04 97.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6252,7 +6218,7 @@
 	)
 	(global_label "ESP32_3V3"
 		(shape input)
-		(at 38.1 260.35 180)
+		(at 45.72 260.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6262,7 +6228,7 @@
 		)
 		(uuid "21a3286a-8f77-4571-8575-2e3bb26a4291")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.5921 260.35 0)
+			(at 32.2121 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6317,7 +6283,7 @@
 		)
 	)
 	(global_label "VCC_3V3"
-		(shape input)
+		(shape output)
 		(at 339.09 27.94 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6383,7 +6349,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO36"
-		(shape input)
+		(shape output)
 		(at 96.52 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6427,7 +6393,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO34"
-		(shape input)
+		(shape output)
 		(at 96.52 69.85 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6450,7 +6416,7 @@
 	)
 	(global_label "ESP32_GPIO34"
 		(shape input)
-		(at 38.1 255.27 180)
+		(at 45.72 255.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6460,7 +6426,7 @@
 		)
 		(uuid "502e640a-e415-4062-be8b-c8469d4f5c75")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.2054 255.27 0)
+			(at 28.8254 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6493,8 +6459,8 @@
 		)
 	)
 	(global_label "ESP32_GPIO48"
-		(shape input)
-		(at 38.1 252.73 180)
+		(shape bidirectional)
+		(at 45.72 252.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6504,7 +6470,7 @@
 		)
 		(uuid "5a49525e-3408-47a0-a364-bf8d04abd0cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.2054 252.73 0)
+			(at 27.7141 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6503,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO37"
-		(shape input)
+		(shape output)
 		(at 96.52 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6558,30 +6524,8 @@
 			)
 		)
 	)
-	(global_label "ESP32_3V3"
-		(shape input)
-		(at 83.82 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7309bd0f-530d-48e1-8663-88ab39219cd7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.3279 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VBUS"
-		(shape input)
+		(shape output)
 		(at 260.35 25.4 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6603,7 +6547,7 @@
 		)
 	)
 	(global_label "ESP32_TXD0"
-		(shape input)
+		(shape output)
 		(at 96.52 49.53 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6647,7 +6591,7 @@
 		)
 	)
 	(global_label "CP2102_DTRb"
-		(shape input)
+		(shape output)
 		(at 346.71 63.5 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6691,7 +6635,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO38"
-		(shape input)
+		(shape output)
 		(at 96.52 80.01 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6713,7 +6657,7 @@
 		)
 	)
 	(global_label "VCC_5V"
-		(shape input)
+		(shape output)
 		(at 285.75 29.21 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6779,7 +6723,7 @@
 		)
 	)
 	(global_label "USB_DN"
-		(shape input)
+		(shape output)
 		(at 285.75 36.83 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6911,7 +6855,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO39"
-		(shape input)
+		(shape output)
 		(at 96.52 82.55 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6933,7 +6877,7 @@
 		)
 	)
 	(global_label "CP2102_RXTb"
-		(shape input)
+		(shape output)
 		(at 346.71 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6955,7 +6899,7 @@
 		)
 	)
 	(global_label "ESP32_RST"
-		(shape input)
+		(shape output)
 		(at 177.8 19.05 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6977,7 +6921,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO16"
-		(shape input)
+		(shape bidirectional)
 		(at 130.81 261.62 270)
 		(fields_autoplaced yes)
 		(effects
@@ -6988,7 +6932,7 @@
 		)
 		(uuid "b6218522-3d92-471d-9a6e-5c5ccdd9988b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 278.5146 90)
+			(at 130.81 279.6259 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7109,7 +7053,7 @@
 		)
 	)
 	(global_label "ESP32_RXD0"
-		(shape input)
+		(shape output)
 		(at 96.52 52.07 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7131,7 +7075,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO48"
-		(shape input)
+		(shape bidirectional)
 		(at 96.52 100.33 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7142,7 +7086,7 @@
 		)
 		(uuid "d7cff92d-ba4c-416e-a88f-040250b8f518")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.4146 100.33 0)
+			(at 114.5259 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,7 +7097,7 @@
 		)
 	)
 	(global_label "USB_DP"
-		(shape input)
+		(shape output)
 		(at 285.75 34.29 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7219,7 +7163,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO18"
-		(shape input)
+		(shape output)
 		(at 66.04 100.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7285,7 +7229,7 @@
 		)
 	)
 	(global_label "ESP32_GPIO0"
-		(shape input)
+		(shape output)
 		(at 66.04 54.61 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7999,7 +7943,7 @@
 		(dnp no)
 		(uuid "10babb40-f6b9-462b-bc40-3ada63c925f4")
 		(property "Reference" "U5"
-			(at 83.4233 41.91 0)
+			(at 75.692 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11168,7 +11112,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.402 257.81 0)
+			(at 40.386 257.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
