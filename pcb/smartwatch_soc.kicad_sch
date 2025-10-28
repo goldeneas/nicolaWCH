@@ -4621,6 +4621,12 @@
 		(uuid "19baf6df-ccdb-4567-aaa7-5a062c2dbf98")
 	)
 	(junction
+		(at 81.28 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "227ec85f-9f7a-4806-a464-0def96897293")
+	)
+	(junction
 		(at 246.38 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4821,6 +4827,16 @@
 			(type default)
 		)
 		(uuid "0d95ff11-3ac7-41ac-a20a-fbdd9e9deb9d")
+	)
+	(wire
+		(pts
+			(xy 80.01 31.75) (xy 81.28 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e0bd041-63f1-4773-a655-d7629474bb5d")
 	)
 	(wire
 		(pts
@@ -5514,16 +5530,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 31.75) (xy 81.28 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce5ac8ce-267a-463c-9c72-13f8d9cc7fa7")
-	)
-	(wire
-		(pts
 			(xy 40.64 236.22) (xy 40.64 234.95)
 		)
 		(stroke
@@ -5571,6 +5577,16 @@
 			(type default)
 		)
 		(uuid "d59cd0a4-bd62-4d20-b9db-5b1e0e3df731")
+	)
+	(wire
+		(pts
+			(xy 81.28 31.75) (xy 81.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b1c5b6-14be-4eb4-85bb-abcd2bb43aa1")
 	)
 	(wire
 		(pts
@@ -6780,7 +6796,7 @@
 	)
 	(global_label "VCC_3V3"
 		(shape input)
-		(at 81.28 31.75 180)
+		(at 80.01 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6790,7 +6806,7 @@
 		)
 		(uuid "ba84b2bf-573a-4698-a1b3-fda49c1b917e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.191 31.75 0)
+			(at 68.921 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
