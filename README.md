@@ -1,6 +1,8 @@
 # nicolaWCH
-This is my attempt at a self-made smartwatch.  
-The code is in Micropython and runs on an STM32F411 Development Board, along with an MPU6500 and an SH1107G display.
+The smartwatch features:  
+\- ESP32-S3-MINI-1  
+\- USB TypeB Micro Connector + MIC5219-3.3YM5  
+\- LSM6DS3  
+\- I2C Display Module  
 
-Here's a picture:
-![rotated-image](https://github.com/user-attachments/assets/ff82e0a9-4ba8-4388-bbab-5472863e5cec)
+<img width="3507" height="2480" alt="immagine" src="https://github.com/user-attachments/assets/5f9e9cca-6fad-455e-a575-b9c7da51cd2b" />
